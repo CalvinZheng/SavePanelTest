@@ -20,8 +20,9 @@
 	// Insert code here to initialize your application
 	
 	self.uiPanel = [[NSSavePanel alloc] init];
-	NSView* accView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 100, 100)];
-	NSButton* testButton = [NSButton checkboxWithTitle:@"Test" target:self action:@selector(testAction)];
+	[self.uiPanel setNameFieldStringValue:@"Click the button!"];
+	NSView* accView = [[NSView alloc] initWithFrame:NSMakeRect(0, 0, 300, 100)];
+	NSButton* testButton = [NSButton buttonWithTitle:@"Call setNameFieldStringValue:" target:self action:@selector(testAction)];
 	[accView addSubview:testButton];
 	self.uiPanel.accessoryView = accView;
 	
