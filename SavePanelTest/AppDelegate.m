@@ -38,7 +38,7 @@
 
 - (void)testAction
 {
-	self.uiPanel.nameFieldStringValue = @"xxxx";
+	[self.uiPanel setNameFieldStringValue:@"It works!"];
 }
 
 
